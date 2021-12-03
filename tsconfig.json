@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "esnext",
+      "lib": ["DOM", "DOM.Iterable", "ESNext"],
+      "types": ["vite/client"],
+      "skipLibCheck": true,
+      "allowSyntheticDefaultImports": true,
+      "strict": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "jsx": "react-jsx",
+      "baseUrl": "./src",
+      "paths": {
+        "~/*": [
+          "./*"
+        ]
+      }
+    },
+    "include": ["./src"]
+  }
+  
