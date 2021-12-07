@@ -3,7 +3,12 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['plugin:react/recommended', 'prettier'],
+  extends: [
+    'plugin:react/recommended',
+    'plugin:react/jsx-runtime',
+    'plugin:react-hooks/recommended',
+    'prettier',
+  ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -20,20 +25,6 @@ module.exports = {
   plugins: ['react', '@typescript-eslint'],
   rules: {
     'react/prop-types': 'off',
-    'react/jsx-curly-brace-presence': 'error',
-    // React 17
-    'react/jsx-uses-react': 'off',
-    'react/react-in-jsx-scope': 'off',
-    'react/self-closing-comp': [
-      'error',
-      {
-        component: true,
-        html: true,
-      },
-    ],
-    'react/jsx-boolean-value': 'error',
     'prefer-template': 'error',
-    'jsx-quotes': ['error', 'prefer-double'],
-    'react/jsx-tag-spacing': 'error',
   },
 };
